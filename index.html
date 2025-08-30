@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <!-- CSS External Link  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <article class="stats-card">
+        <section class="stats-card__image">
+          <picture>
+            <!-- for desktop  -->
+            <source
+              media="(min-width: 37.5em)"
+              srcset="images/image-header-desktop.jpg"
+            />
+
+            <!-- for mobile  -->
+            <source
+              media="(max-width: 37.5em)"
+              srcset="images/image-header-mobile.jpg"
+            />
+
+            <!-- fallback  -->
+            <img
+              src="images/image-header-desktop.jpg"
+              alt="Office teamwork illustration"
+            />
+          </picture>
+        </section>
+
+        <section class="stats-card__content">
+          <h1 class="stats-card__title">
+            Get
+            <span class="stats-card__highlight"
+              ><span>i</span><span>n</span><span>s</span><span>i</span
+              ><span>g</span><span>h</span><span>t</span><span>s</span></span
+            >
+            that help your business grow.
+          </h1>
+
+          <p class="stats-card__description">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+
+          <section class="stats-card__statistics">
+            <div class="stats-card__stat">
+              <strong class="stats-card__stat-number">10K+</strong>
+              <span class="stats-card__stat-label">companies</span>
+            </div>
+
+            <div class="stats-card__stat">
+              <strong class="stats-card__stat-number">314</strong>
+              <span class="stats-card__stat-label">templates</span>
+            </div>
+
+            <div class="stats-card__stat">
+              <strong class="stats-card__stat-number">12M+</strong>
+              <span class="stats-card__stat-label">queries</span>
+            </div>
+          </section>
+        </section>
+      </article>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Sana Khan</a>.
+    </footer>
+  </body>
+</html>
